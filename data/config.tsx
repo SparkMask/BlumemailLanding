@@ -26,16 +26,7 @@ const siteConfig = {
       {
         id: 'faq',
         label: 'FAQ',
-      },
-      {
-        label: 'Login',
-        href: '/login',
-      },
-      {
-        label: 'Sign Up',
-        href: '/signup',
-        variant: 'primary',
-      },
+      }
     ],
   },
   footer: {

@@ -6,31 +6,25 @@ export default {
     'Pay once and get life-time access to our high quality components.',
   plans: [
     {
-      id: 'oss',
-      title: 'Open Source',
-      description: 'Basic compoents, perfect to get started.',
-      price: 'Free',
+      id: 'bronze',
+      title: 'Blumemail Bronze',
+      description: 'Our cheapest plan, with all the power of Blumemail.',
+      price: '$3',
       features: [
         {
-          title: 'MIT License',
+          title: 'Lightweight Emails',
         },
         {
-          title: 'Authentication (Clerk/Supabase/Magic)',
+          title: 'Customer Support (Email, Phone, Live Chat)',
         },
         {
-          title: 'Form (react-hook-form)',
+          title: 'Privacy Commitment Guarantee',
         },
         {
-          title: 'Modals manager',
+          title: 'Easy to use SOGo webmail.',
         },
         {
-          title: 'Hotkeys',
-        },
-        {
-          title: 'Web3 components',
-        },
-        {
-          title: 'And much more...',
+          title: 'Support for external mail clients.',
         },
       ],
       action: {
@@ -38,37 +32,26 @@ export default {
       },
     },
     {
-      id: 'bootstrap',
-      title: 'Bootstrap',
-      description: 'Complete frontend stack for bootstrappers and small teams.',
-      price: 'Free',
+      id: 'silver',
+      title: 'Blumemail Silver',
+      description: 'More Storage, More Power.',
+      price: '$5',
       isRecommended: true,
       features: [
         {
-          title: 'One project',
+          title: 'Lightweight Emails',
         },
         {
-          title: 'One developer',
+          title: 'Customer Support (Email, Phone, Live Chat)',
         },
         {
-          title: 'Advanced components',
+          title: 'Privacy Commitment Guarantee',
         },
         {
-          title: 'Multiple themes',
+          title: 'Easy to use SOGo webmail.',
         },
         {
-          title: 'Next.js and Electron boilerplates',
-        },
-        {
-          title: 'Private discord community',
-        },
-        {
-          title: '1 year of updates',
-        },
-        null,
-        {
-          title: 'Private beta access',
-          iconColor: 'green.500',
+          title: 'Support for external mail clients.',
         },
       ],
       action: {
@@ -76,33 +59,26 @@ export default {
       },
     },
     {
-      id: 'startup',
-      title: 'Startup',
-      description: 'Unlimited license for growing teams.',
-      price: (
-        <HStack>
-          <Text textDecoration="line-through" fontSize="sm" color="gray.400">
-            €999,-
-          </Text>
-          <Text>€499,-</Text>
-        </HStack>
-      ),
+      id: 'smallbus',
+      title: 'Small Business',
+      description: '[Description.]',
+      price: '$1/Mailbox',
       features: [
         {
-          title: 'Unlimited projects',
+          title: '[Feature 1]',
         },
         {
-          title: 'Unlimited developers',
+          title: '[Feature 2]',
         },
         {
-          title: '1 year of updates',
+          title: '[Feature 3]',
         },
         {
-          title: 'Everything from Bootstrap',
+          title: '[Feature 4]',
         },
         null,
         {
-          title: 'Private beta access',
+          title: '[Special Feature 1]',
           iconColor: 'green.500',
         },
       ],
