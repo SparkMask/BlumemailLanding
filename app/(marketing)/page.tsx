@@ -50,7 +50,7 @@ import {
   HighlightsItem,
   HighlightsTestimonialItem,
 } from '#components/highlights'
-import { ChakraLogo, NextjsLogo } from '#components/logos'
+import { NextjsLogo } from '#components/logos'
 import { FallInPlace } from '#components/motion/fall-in-place'
 import { Pricing } from '#components/pricing/pricing'
 import { Testimonial, Testimonials } from '#components/testimonials'
@@ -58,10 +58,11 @@ import { Em } from '#components/typography'
 import faq from '#data/faq'
 import pricing from '#data/pricing'
 import testimonials from '#data/testimonials'
+import { AnnouncementBanner } from '#components/announcement-banner'
 
 export const meta: Metadata = {
-  title: 'Saas UI Landingspage',
-  description: 'Free SaaS landingspage starter kit',
+  title: 'Blumemail',
+  description: 'Secure email service from SparkMask.',
 }
 
 const Home: NextPage = () => {
@@ -86,53 +87,35 @@ const HeroSection: React.FC = () => {
   return (
     <Box position="relative" overflow="hidden">
       <BackgroundGradient height="100%" zIndex="-1" />
+      <AnnouncementBanner title={'Payments are offline until further notice.'} description={''} href={''} />
       <Container maxW="container.xl" pt={{ base: 40, lg: 60 }} pb="40">
         <Stack direction={{ base: 'column', lg: 'row' }} alignItems="center">
+          
           <Hero
             id="home"
             justifyContent="flex-start"
             px="0"
             title={
               <FallInPlace>
-                Build beautiful
-                <Br /> software faster
+                Your Mail,
+                <Br /> Well Deserved.
               </FallInPlace>
             }
             description={
               <FallInPlace delay={0.4} fontWeight="medium">
-                Saas UI is a <Em>React component library</Em>
-                <Br /> that doesn&apos;t get in your way and helps you <Br />{' '}
-                build intuitive SaaS products with speed.
+                Blumemail is the premier email service.
+                <Br /> We&apos;re talking for your own business, personal, secondary, projects, or honestly anything.
               </FallInPlace>
             }
           >
             <FallInPlace delay={0.8}>
               <HStack pt="4" pb="12" spacing="8">
-                <NextjsLogo height="28px" /> <ChakraLogo height="20px" />
+                <Link href={'https://mailcow.email'} target='_blank'><Image src={'/static/images/mailcow.png'} alt={'mailcow Logo'} width={'28'} height={'28'}/></Link> <NextjsLogo height="20px" />
               </HStack>
 
               <ButtonGroup spacing={4} alignItems="center">
-                <ButtonLink colorScheme="primary" size="lg" href="/signup">
-                  Sign Up
-                </ButtonLink>
-                <ButtonLink
-                  size="lg"
-                  href="https://demo.saas-ui.dev"
-                  variant="outline"
-                  rightIcon={
-                    <Icon
-                      as={FiArrowRight}
-                      sx={{
-                        transitionProperty: 'common',
-                        transitionDuration: 'normal',
-                        '.chakra-button:hover &': {
-                          transform: 'translate(5px)',
-                        },
-                      }}
-                    />
-                  }
-                >
-                  View demo
+                <ButtonLink colorScheme="primary" size="lg" href="#">
+                  Get Blumemail
                 </ButtonLink>
               </ButtonGroup>
             </FallInPlace>
@@ -149,10 +132,10 @@ const HeroSection: React.FC = () => {
             <FallInPlace delay={1}>
               <Box overflow="hidden" height="100%">
                 <Image
-                  src="/static/screenshots/list.png"
+                  src="/static/screenshots/Surface-Pro-and-iPhone.png"
                   width={1200}
                   height={762}
-                  alt="Screenshot of a ListPage in Saas UI Pro"
+                  alt="Screenshot of Blumemail's Webmail software"
                   quality="75"
                   priority
                 />

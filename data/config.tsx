@@ -1,23 +1,23 @@
 import { Button } from '@chakra-ui/react'
 import { Link } from '@saas-ui/react'
 import { NextSeoProps } from 'next-seo'
-import { FaGithub, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import { FiCheck } from 'react-icons/fi'
 import { Logo } from './logo'
 
 const siteConfig = {
   logo: Logo,
   seo: {
-    title: 'Saas UI',
-    description: 'The React component library for startups',
+    title: 'Blumemail',
+    description: 'Secure email service from SparkMask.',
   } as NextSeoProps,
   termsUrl: '#',
   privacyUrl: '#',
   header: {
     links: [
       {
-        id: 'features',
-        label: 'Features',
+        href: 'https://mail.blumemail.net/SOGo/',
+        label: 'Log Into Webmail',
       },
       {
         id: 'pricing',
@@ -41,21 +41,21 @@ const siteConfig = {
   footer: {
     copyright: (
       <>
-        Built by{' '}
-        <Link href="https://twitter.com/Pagebakers">Eelco Wiersma</Link>
+        Copyright &copy; 2025{' '}
+        <Link href="https://sparkmask.com">SparkMask</Link>
       </>
     ),
     links: [
       {
-        href: 'mailto:hello@saas-ui.dev',
+        href: 'mailto:contact@staff.blumemail.net',
         label: 'Contact',
       },
       {
-        href: 'https://twitter.com/saas_js',
-        label: <FaTwitter size="14" />,
+        href: 'https://linkedin.com/company/sparkmask',
+        label: <FaLinkedin size="14" />,
       },
       {
-        href: 'https://github.com/saas-js/saas-ui',
+        href: 'https://github.com/SparkMask',
         label: <FaGithub size="14" />,
       },
     ],
