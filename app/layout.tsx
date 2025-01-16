@@ -8,6 +8,7 @@ export default function Layout(props: { children: React.ReactNode }) {
   return (
     <html lang="en" data-theme={colorMode} style={{ colorScheme: colorMode }}>
       <head>
+        <title>Blumemail | SparkMask Solutions</title>
         <link
           rel="apple-touch-icon"
           sizes="76x76"
