@@ -62,10 +62,6 @@ import testimonials from '#data/testimonials'
 import { AnnouncementBanner } from '#components/announcement-banner'
 import { AiFillLock } from 'react-icons/ai'
 
-export const meta: Metadata = {
-  title: 'Blumemail',
-  description: 'Secure email service from SparkMask.',
-}
 
 const Home: NextPage = () => {
   return (
