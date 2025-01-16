@@ -1,9 +1,9 @@
 import { HStack, Text } from '@chakra-ui/react'
 
 export default {
-  title: 'Pricing for every stage',
+  title: 'Pricing for every enthusiast.',
   description:
-    'Pay once and get life-time access to our high quality components.',
+    'Get better, more secure, and more safe emails for a fraction of the cost.',
   plans: [
     {
       id: 'bronze',
