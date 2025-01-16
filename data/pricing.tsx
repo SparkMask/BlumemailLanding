@@ -61,25 +61,20 @@ export default {
     {
       id: 'smallbus',
       title: 'Small Business',
-      description: '[Description.]',
+      description: 'Blumemail for Small Business can help your business go even further with secure and private email, that just works.',
       price: '$1/Mailbox',
       features: [
         {
-          title: '[Feature 1]',
+          title: '4GB per Mailbox.',
         },
         {
-          title: '[Feature 2]',
+          title: 'OPTIONAL Auto-Delete Routine.',
         },
         {
-          title: '[Feature 3]',
+          title: 'Free Custom Domain Connection.',
         },
         {
-          title: '[Feature 4]',
-        },
-        null,
-        {
-          title: '[Special Feature 1]',
-          iconColor: 'green.500',
+          title: 'Data is hosted in a seperate, secure environment.',
         },
       ],
       action: {
