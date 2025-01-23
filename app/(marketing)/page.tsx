@@ -81,7 +81,7 @@ const HeroSection: React.FC = () => {
   return (
     <Box position="relative" overflow="hidden">
       <BackgroundGradient height="100%" zIndex="-1" />
-      <AnnouncementBanner title={'Blumemail is now Blumemail for Business'} description={''} href={''} />
+      <AnnouncementBanner title={'Blumemail is now Blumemail for Business. Learn More.'} description={''} href={'https://blog.sparkmask.com/posts/blumemail-notice-for-individuals'} />
       <Container maxW="container.xl" pt={{ base: 40, lg: 60 }} pb="40">
         <Stack direction={{ base: 'column', lg: 'row' }} alignItems="center">
           
