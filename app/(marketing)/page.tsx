@@ -91,14 +91,13 @@ const HeroSection: React.FC = () => {
             px="0"
             title={
               <FallInPlace>
-                Your Mail,
-                <Br /> Well Deserved.
+                Blumemail is now
+                <Br /> discontinued.
               </FallInPlace>
             }
             description={
               <FallInPlace delay={0.4} fontWeight="medium">
-                Blumemail is the premier email service.
-                <Br /> We&apos;re talking for your own business, personal, secondary, projects, or honestly anything.
+                This is in due to issues maintaining the service. <Link href={'https://blog.sparkmask.com/posts/blumemail-discontinued'}>Find out why here</Link>.
               </FallInPlace>
             }
           >
@@ -109,37 +108,15 @@ const HeroSection: React.FC = () => {
 
               <ButtonGroup spacing={4} alignItems="center">
                 <ButtonLink colorScheme="primary" size="lg" href="#">
-                  Get Blumemail
+                  <s>Get Blumemail</s>
                 </ButtonLink>
               </ButtonGroup>
             </FallInPlace>
           </Hero>
-          <Box
-            height="600px"
-            position="absolute"
-            display={{ base: 'none', lg: 'block' }}
-            left={{ lg: '60%', xl: '55%' }}
-            width="80vw"
-            maxW="1100px"
-            margin="0 auto"
-          >
-            <FallInPlace delay={1}>
-              <Box overflow="hidden" height="100%">
-                <Image
-                  src="/static/screenshots/Surface-Pro-and-iPhone.png"
-                  width={1200}
-                  height={762}
-                  alt="Screenshot of Blumemail's Webmail software"
-                  quality="75"
-                  priority
-                />
-              </Box>
-            </FallInPlace>
-          </Box>
         </Stack>
       </Container>
 
-      <Features
+      <s> <Features
         id="benefits"
         columns={[1, 2, 4]}
         iconSize={4}
@@ -179,7 +156,7 @@ const HeroSection: React.FC = () => {
           },
         ]}
         reveal={FallInPlace}
-      />
+      /> </s>
     </Box>
   )
 }
