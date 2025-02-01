@@ -36,8 +36,8 @@ const HeroSection: React.FC = () => {
             px="0"
             title={
               <FallInPlace>
-                Blumemail is now
-                <Br /> discontinued.
+                B̵l̸u̴m̷e̵m̵a̸i̸l̸ ̵i̷s̵ ̶n̶o̶w̷
+                <Br /> d̴i̸s̸c̸o̷n̴t̷i̵n̶u̵e̸d̵.̷
               </FallInPlace>
             }
             description={
